@@ -50,11 +50,11 @@ function App() {
       onComplete: () => {
         console.log("onComplete and do nothing");
 
-        onfidoWebSdk?.setOptions({ isModalOpen: false });
+        // onfidoWebSdk?.setOptions({ isModalOpen: false });
         console.log("trying to teardown", onfidoWebSdk?.tearDown);
-        setTimeout(() => {
-					onfidoWebSdk?.tearDown();
-        }, 0);
+        // setTimeout(() => {
+        onfidoWebSdk?.tearDown();
+        // }, 1000)
       },
       onUserExit() {
         console.log("onUserExit");

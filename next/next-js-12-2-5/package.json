@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.0.6",
-    "onfido-sdk-ui": "^9.1.4",
+    "next": "12.2.5",
+    "onfido-sdk-ui": "9.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6"
-  }
+  },
+  "browserslist": [
+    "chrome 64",
+    "edge 79",
+    "firefox 67",
+    "opera 51",
+    "safari 12",
+    "ie 11"
+  ]
 }
