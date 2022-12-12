@@ -1,0 +1,14 @@
+import * as Onfido from "onfido-sdk-ui";
+import { useEffect } from "react";
+
+export default function Onf() {
+  useEffect(() => {
+    console.log(Onfido.init);
+    Onfido.init({
+      token:
+        "eyJhbGciOiJFUzUxMiJ9.eyJleHAiOjE2NzA4NTk3ODUsInBheWxvYWQiOnsiYXBwIjoiYTUxOWVmYjMtYjkzMi00YWM5LTg4YmMtYmRjMmYzMGYyMTcyIiwiY2xpZW50X3V1aWQiOiJjZTY5ZjE4Zi04MDA2LTQyM2QtYWZkYS1mY2FmZjBkZTIxNTQiLCJpc19zYW5kYm94IjpmYWxzZSwiaXNfdHJpYWwiOnRydWUsInJlZiI6Iio6Ly8qLyoiLCJzYXJkaW5lX3Nlc3Npb24iOiI2NGQ4NzYzOC1lZmEyLTQ3NmUtYWQ0MS1jNDFkNjY4ZTVjZWYifSwidXVpZCI6ImJxOVpsZi1uZGNCIiwiZW50ZXJwcmlzZV9mZWF0dXJlcyI6eyJjb2JyYW5kIjp0cnVlLCJsb2dvQ29icmFuZCI6dHJ1ZSwiaGlkZU9uZmlkb0xvZ28iOnRydWUsInVzZUN1c3RvbWl6ZWRBcGlSZXF1ZXN0cyI6dHJ1ZSwiZGlzYWJsZU1vYmlsZVNka0FuYWx5dGljcyI6dHJ1ZX0sInVybHMiOnsiZGV0ZWN0X2RvY3VtZW50X3VybCI6Imh0dHBzOi8vc2RrLm9uZmlkby5jb20iLCJzeW5jX3VybCI6Imh0dHBzOi8vc3luYy5vbmZpZG8uY29tIiwiaG9zdGVkX3Nka191cmwiOiJodHRwczovL2lkLm9uZmlkby5jb20iLCJhdXRoX3VybCI6Imh0dHBzOi8vYXBpLm9uZmlkby5jb20iLCJvbmZpZG9fYXBpX3VybCI6Imh0dHBzOi8vYXBpLm9uZmlkby5jb20iLCJ0ZWxlcGhvbnlfdXJsIjoiaHR0cHM6Ly9hcGkub25maWRvLmNvbSJ9fQ.MIGHAkIBQm9dKVFvZcb4xJ0Tb3t32cy-kKUg5l_SkHG4ZAznl8fCuSCWbhOoCY6coTVP2I2KkhcgU-xlTWWeVfyaOSVEetsCQSe1_4JQbZECURnBFocfNMI7azNKtmdS6PadSc5AfWNpcJB8LX2tir9DUOsXn15mrmJH9m8c6i_TIWzGAU7mjYIc",
+    });
+  }, []);
+
+  return <div id="onfido-mount" />;
+}
